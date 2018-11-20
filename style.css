@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.item1 {
+  background: url('img.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.item2 {
+  background: lightcyan;
+}
+.item3 {
+  background: lightpink;
+}
+.item4 {
+  background: lightseagreen;
+}
+.item5 {
+  background: lightslategray;
+}
+.item6 {
+  background: lightyellow;
+}
+.item7 {
+  background: lightblue;
+}
+.item8 {
+  background: lightsalmon;
+}
+.item9 {
+  background: lightsteelblue;
+}
+.item10 {
+  background: lightgreen;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "one one two three three"
+      "one one four five five"
+      "six seven seven five five"
+      "six eight nine nine ten"
+  }
+  
+  .item1 {
+    background: url('img.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #fff;
+    font-size: 2rem;
+    grid-area: one;
+  }
+  
+  .item2 {
+    background-color: rgb(244, 203, 41);
+    grid-area: two;
+  }
+  
+  .item3 {
+    background-color: rgb(16, 230, 84);
+    grid-area: three;
+  }
+  
+  .item4 {
+    background-color: rgb(214, 50, 247);
+    grid-area: four;
+  }
+  
+  .item5 {
+    background-color: rgb(9, 246, 250);
+    grid-area: five;
+  }
+  
+  .item6 {
+    background-color: rgb(196, 205, 34);
+    grid-area: six;
+  }
+  
+  .item7 {
+    background-color: rgb(250, 139, 4);
+    grid-area: seven;
+  }
+  
+  .item8 {
+    background-color: rgb(136, 147, 208);
+    grid-area: eight;
+  }
+  
+  .item9 {
+    background-color: rgb(99, 4, 4);
+    grid-area: nine;
+  }
+  
+  .item10 {
+    background-color: rgb(114, 232, 75);
+    grid-area: ten;
+  }
+}
